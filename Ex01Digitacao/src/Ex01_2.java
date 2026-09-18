@@ -20,9 +20,11 @@ public class Ex01_2 {
         // usa o scanner pra puxar a digitação do teclado para uma variável
         // "teclado" é o nome do scanner. é ele que eu tenho que chamar pra digitar
         String nome = teclado.next();
+        System.out.println("E seu sobrenome?");
+        String sobrenome = teclado.next();
 
         // imprime o resultado
-        System.out.println("Olá, " + nome + ", como vai?");
+        System.out.println("Olá, " + nome + " " + sobrenome + ", como vai?");
 
         // fecha o scanner
         teclado.close();

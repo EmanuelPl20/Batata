@@ -24,13 +24,13 @@ public class Ex01_3 {
         int idade;
         System.out.print("Qual sua idade? ");
         idade = teclado.nextInt();
-        System.out.printf("Que legal, vc tem %d\n", idade);
+        System.out.printf("Que legal, vc tem %d anos\n", idade);
 
         // com casas decimais - double
         double altura;
         System.out.print("Qual sua altura? ");
         altura = teclado.nextDouble();
-        System.out.printf("Que legal, vc tem %f\n", altura);
+        System.out.printf("Que legal, vc tem %.2f\n", altura);
 
         // char - um único caractere
         char megaSena;
@@ -59,7 +59,7 @@ public class Ex01_3 {
         }
 
         // resumo
-        System.out.printf("Nome: %s, Idade: %d, Altura: %f, Jogador:%c",
+        System.out.printf("Nome: %s, Idade: %d, Altura: %.2f, Jogador:%c",
                 nome, idade, altura, megaSena);
     }
 
