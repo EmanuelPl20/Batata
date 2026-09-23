@@ -14,7 +14,20 @@
     - use a função Math.round() para arredondar a quantidade calculada
     - uma forma de calcular é: Math.round(valor / 100.0)
 -------------------------------------------------------------------*/
+
+import java.util.Scanner;
+
 public class Ex02_1 {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
+        Scanner batata = new Scanner(System.in);
+        double valor;
+        System.out.println("Informe o valor da compra: ");
+        valor = batata.nextDouble();
+        if (valor >= 100) {
+            System.out.println("A quantidade de raspasdinhas recebida será: " + Math.round(valor / 100));
         }
+        System.out.println("Compra finalizada");
+
+
+    }
 }

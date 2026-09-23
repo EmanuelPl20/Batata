@@ -25,7 +25,32 @@
     - depois de terminar, conceda desconto de 10% para pessoas 
       com mais de 60 anos (mas não acumula se for estudante)
 -------------------------------------------------------------------*/
+
+import java.util.Scanner;
+
 public class Ex02_4 {
     public static void main(String[] args) {
+        Scanner batata = new Scanner(System.in);
+
+        System.out.println("Informe sua idade: ");
+        int idade = batata.nextInt();
+
+        System.out.println("Você é estudante? (S/N): ");
+        char estudanteChar = batata.next().charAt(0);
+
+        boolean eEstudante = (estudanteChar == 'S' || estudanteChar == 's');
+        double valorEntrada = 30.00;
+
+        if (idade < 18 || eEstudante) {
+            valorEntrada = 15.00;
+        } else if (idade > 60) {
+            valorEntrada = 30.00 * 0.90;
+        }
+
+        System.out.printf("O valor da entrada é: R$ %.2f%n", valorEntrada);
+
+        batata.close();
     }
 }
+
+

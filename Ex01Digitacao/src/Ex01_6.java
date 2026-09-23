@@ -21,8 +21,20 @@
   - exemplos: (double) quilometros / litros 
     ou quilometros / (double) litros
 -------------------------------------------------------------------*/
+import java.sql.SQLOutput;
+import java.util.Scanner;
 public class Ex01_6 {
     public static void main(String[] args) {
+        Scanner batata = new Scanner(System.in);
+        int quilometros;
+        int litros;
+        double consume;
+        System.out.println("Informe os quilômetros: ");
+        quilometros = batata.nextInt();
+        System.out.println("Informe os litros");
+        litros = batata.nextInt();
+        consume = (double) quilometros/litros;
+        System.out.printf("São usados: %.2f litros por quilômetro rodado", consume);
 
     }
 }
