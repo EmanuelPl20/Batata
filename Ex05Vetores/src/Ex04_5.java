@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ex04_5 {
     public static void main(String[] args) {
-        var scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Quantas notas deseja digitar? ");
         int quantidade = scanner.nextInt();

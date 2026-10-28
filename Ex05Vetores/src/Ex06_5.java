@@ -5,9 +5,9 @@ public class Ex06_5 {
         int[] limitesMinimos = {0, 55, 65, 75, 85, 100};
         String[] categorias = {"pena", "leve", "médio", "meio-pesado", "pesado", "super-pesado"};
 
-        var scanner = new Scanner(System.in);
+        Scanner Batata = new Scanner(System.in);
         System.out.print("Digite o peso do atleta (em kg): ");
-        double peso = scanner.nextDouble();
+        double peso = Batata.nextDouble();
 
         String categoriaEncontrada = "Inválida";
 
@@ -19,6 +19,6 @@ public class Ex06_5 {
         }
 
         System.out.println("O peso de " + peso + "kg se enquadra na categoria: " + categoriaEncontrada);
-        scanner.close();
+        Batata.close();
     }
 }

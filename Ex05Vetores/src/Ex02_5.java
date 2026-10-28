@@ -1,5 +1,3 @@
-import java.util.List;
-
 public class Ex02_5 {
     public static void main(String[] args) {
         String[] cores = {"Vermelho", "Laranja", "Amarelo", "Verde", "Azul", "Anil", "Violeta"};
